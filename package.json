@@ -1,0 +1,31 @@
+{
+  "name": "gyan-youtube",
+  "version": "1.0.0",
+  "description": "Gyan Youtube",
+  "main": "app.js",
+  "scripts": {
+    "test": "./node_modules/mocha/bin/_mocha --timeout 120000 test/*/*.js",
+    "start": "node --harmony --max_old_space_size=400 app.js",
+    "lint": "mkdir -p artifacts/lint/ && ./node_modules/.bin/jshint . --verbose",
+    "lint-jenkins": "mkdir -p artifacts/lint/ && ./node_modules/.bin/jshint . --verbose --reporter=checkstyle > artifacts/lint/jshint.xml || exit 0",
+    "devtest": "./node_modules/.bin/jenkins-mocha --cobertura test/*",
+    "coverage": "./node_modules/.bin/istanbul cover --report html ./node_modules/mocha/bin/_mocha -- --timeout 120000 test/*/*.js"
+  },
+  "author": "Gorav Singal",
+  "license": "ISC",
+  "dependencies": {
+    "async": "2.6.0",
+    "convict": "4.0.1",
+    "moment": "2.19.4",
+    "mongodb": "2.2.33",
+    "mongoose": "4.12.6",
+    "mongoose-paginate": "5.0.3",
+    "mongoose-timestamp": "0.6.0",
+    "request-promise-native": "1.0.5",
+    "underscore": "1.8.3",
+    "urijs": "1.19.1",
+    "winston": "2.4.0",
+    "winston-daily-rotate-file": "1.7.2",
+  },
+  "devDependencies": {}
+}

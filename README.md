@@ -1,2 +1,2 @@
-# youtube-api-nodejs
-An easy to use project to access youtube apis. From fetching all videos from a channel to fetch deep details of a video.
+# Gyan Youtube API
+To search youtube videos, and get details of youtube videos
