@@ -1,5 +1,5 @@
 {
-  "name": "youtube-api",
+  "name": "youtube-api-es6",
   "version": "1.0.0",
   "description": "Youtube API",
   "main": "app.js",
